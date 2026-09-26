@@ -144,3 +144,29 @@
     color: var(--velocitytoko-color-main) !important;
     font-size: 1rem;
 }
+
+/* Tombol Hubungi Kami di footer gelap: garis, ikon, dan teks terang, rata kiri. */
+.site-footer .kontak-widget .btn {
+    color: #fff;
+    border-color: rgba(255, 255, 255, .6);
+    text-align: left;
+}
+.site-footer .kontak-widget .btn:hover,
+.site-footer .kontak-widget .btn:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* Hubungi Kami di footer gelap: teks & ikon putih, rata kiri. */
+.site-footer .kontak-widget .btn {
+    color: #fff;
+    border-color: rgba(255, 255, 255, .5);
+    text-align: left;
+}
+.site-footer .kontak-widget .btn:hover,
+.site-footer .kontak-widget .btn:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
