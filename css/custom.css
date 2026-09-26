@@ -4,7 +4,6 @@
 
     font-size: 13px !important;
 
-    background-color: #343434;
 
 }
 
@@ -222,6 +221,32 @@
 
 }
 
+
+/* Cetak pricelist: hanya judul + tabel harga, tanpa header, menu, footer, tombol mengambang, latar. */
+@media print {
+    .page-template-page-pricelist #wrapper-header,
+    .page-template-page-pricelist .site-footer,
+    .page-template-page-pricelist .floating-footer,
+    .page-template-page-pricelist .justg-top-content,
+    .page-template-page-pricelist #wpadminbar {
+        display: none !important;
+    }
+    .page-template-page-pricelist,
+    .page-template-page-pricelist body {
+        background: #fff none !important;
+    }
+    .page-template-page-pricelist .card,
+    .page-template-page-pricelist #content {
+        box-shadow: none !important;
+        border: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .page-template-page-pricelist .table tr {
+        break-inside: avoid;
+    }
+}
 .velocity-footer, .velocity-footer a {
 
     color: #fff;
